@@ -1,0 +1,6 @@
+It is the code for Key Word Spotting working in audio within 1 second.
+It based on Google's speech_commands_v0.01 which is an open-database you can search and download.
+I choose ten commands as key word, tne words are:
+'yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go' 
+the background white noise is deem as silence.
+the other commands or audios are deem as unknown.
