@@ -8,3 +8,15 @@ the other commands or audios are deem as unknown.
 It is the simplest version.
 I would update the neural networks and structures later.
 A fusion net would get better result but I do not have done it currently.
+
+
+********************************************************************************************************
+20180606
+
+Now I've create new method for KWS when know the text of keyword.
+For a word such as 'cat', decompose it into list of characters ['c', 'a', 't']
+use rnn + ctc to train the model.
+The model would transfer speech into text, in this model the output text is a list of characters.
+Now compare the output predict sequence of input speech which is just the list of characters.
+The first method is to compare the predict sequence and target sequence accerately which means that the whole sequence shall be the same with target
+The second method is to compute the edit distance of predict sequence and target sequence, and judge that the two sequence are the same if the distance is smaller than edit distance
